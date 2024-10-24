@@ -1,1 +1,1 @@
-export const customContainerClass = "px-5"
+export const customContainerClass = "px-5 sm:px-1/10"
