@@ -13,6 +13,9 @@ export default {
       padding: {
         '1/10': '10%',
       },
+      margin: {
+        '1/10': '10%',
+      },
     },
     fontFamily: {
       'inter': ["Inter", "sans-serif"],
