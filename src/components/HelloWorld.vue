@@ -1,13 +1,37 @@
 <template>
-  <div class="main-container">
-    <div class="text-center bg-blue-500 text-white p-6">
-      <h1 class="text-3xl font-bold">Hello, Tailwind CSS!</h1>
+  <div :class="`${customContainerClass} py-8 min-h-screen w-full flex flex-col justify-content-center bg-gradient-to-r from-gradient1 to-gradient2 overflow-hidden`">
+    <div class="flex flex-col">
+      <div class="text-white font-semibold text-base bg-primary w-fit rounded-md py-1 px-2">Vaše klientela</div>
+      <h1 class="text-white font-semibold text-4xl leading-tight mt-4 lg:text-6xl">Více zákazníků <br> Větší tržby</h1>
+      <div class="text-whiteText text-xl mt-4" :style="{maxWidth: '430px'}">
+        Zvyšte viditelnost vašeho salonu! 
+        Díky online profilu a snadné správě rezervací 
+        <span class="font-bold">zvýšíte vaše tržby, přilákáte nové zákazníky</span>  
+        a budete mít o všem lepší přehled.
+      </div>
+
+      <button class="bg-white text-lg rounded-lg font-semibold text-btnColor h-14 mt-6 max-w-48">
+        Registrovat salon
+      </button>
+    </div>
+    
+    <div class="relative mt-12" :style="{flexGrow: 1}">
+      <img class="absolute top-0 left-0 h-auto max-w-none" :style="{ width: '180%' }" src="./../../public/img.png" alt="">
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue'
+// TODO: 
+// - tag has opacity
+// - fonts
+// - refactor colors
+// - dont forget pattern
+// - button component
+// - img max width unset globally
+// - layout responsivity on desktop
+
+const customContainerClass = "px-5"
 
 defineProps<{}>()
 </script>
