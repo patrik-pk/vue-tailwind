@@ -1,0 +1,1 @@
+export const customContainerClass = "px-5"

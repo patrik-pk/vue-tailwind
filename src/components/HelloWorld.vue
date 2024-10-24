@@ -1,8 +1,8 @@
 <template>
-  <div :class="`${customContainerClass} py-8 min-h-screen w-full flex flex-col justify-content-center bg-gradient-to-r from-gradient1 to-gradient2 overflow-hidden`">
+  <div :class="customContainerClass" class="py-8 min-h-screen w-full flex flex-col justify-content-center bg-gradient-to-r from-gradient1 to-gradient2 overflow-hidden">
     <div class="flex flex-col">
       <div class="text-white font-semibold text-base bg-primary w-fit rounded-md py-1 px-2">Vaše klientela</div>
-      <h1 class="text-white font-semibold text-4xl leading-tight mt-4 lg:text-6xl">Více zákazníků <br> Větší tržby</h1>
+      <h1 class="text-white font-semibold text-4xl leading-tight mt-4 lg:text-6xl font-jakarta">Více zákazníků <br> Větší tržby</h1>
       <div class="text-whiteText text-xl mt-4" :style="{maxWidth: '430px'}">
         Zvyšte viditelnost vašeho salonu! 
         Díky online profilu a snadné správě rezervací 
@@ -22,16 +22,15 @@
 </template>
 
 <script setup lang="ts">
+import { customContainerClass } from '../helpers'
+
 // TODO: 
 // - tag has opacity
-// - fonts
 // - refactor colors
 // - dont forget pattern
 // - button component
 // - img max width unset globally
 // - layout responsivity on desktop
-
-const customContainerClass = "px-5"
 
 defineProps<{}>()
 </script>

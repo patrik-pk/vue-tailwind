@@ -11,6 +11,10 @@ export default {
         'btnColor': '#344054'
       }
     },
+    fontFamily: {
+      'inter': ["Inter", "sans-serif"],
+      'jakarta': ["Plus Jakarta Sans", "sans-serif"],
+    }
   },
   plugins: [],
 }
