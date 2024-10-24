@@ -35,5 +35,3 @@
 import Banner from './components/Banner.vue'
 import { customContainerClass } from './helpers'
 </script>
-
-<style scoped></style>

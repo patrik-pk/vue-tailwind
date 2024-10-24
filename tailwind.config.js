@@ -5,10 +5,10 @@ export default {
     extend: {
       colors: {
         'primary': '#520DC2',
-        'whiteText': '#E0CFFC',
+        'lavender': '#E0CFFC',
         'gradient1': '#140330',
         'gradient2': '#3D0A91',
-        'btnColor': '#344054'
+        'btn-text-color': '#344054'
       },
       padding: {
         '1/10': '10%',
@@ -17,13 +17,13 @@ export default {
         '1/10': '10%',
       },
       maxHeight: {
-        'limit': '50vw'
+        'banner-limit': '50vw'
       },
       minHeight: {
-        'img': '50vw'
+        'banner-img': '50vw'
       },
       lineHeight: {
-        'minisnug': '1.1'
+        'mini-snug': '1.1'
       },
       backgroundImage: {
         'gradient-45': 'linear-gradient(45deg, var(--tw-gradient-stops))',
