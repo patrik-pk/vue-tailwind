@@ -1,6 +1,6 @@
 <template>
   <div class="font-inter">
-    <HelloWorld />
+    <Banner />
 
     <div class="mt-4" :class="customContainerClass">
       Lorem ipsum dolor sit amet consectetur adipisicing elit. 
@@ -32,7 +32,7 @@
 </template>
 
 <script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
+import Banner from './components/Banner.vue'
 import { customContainerClass } from './helpers'
 </script>
 

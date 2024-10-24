@@ -21,6 +21,12 @@ export default {
       },
       minHeight: {
         'img': '50vw'
+      },
+      lineHeight: {
+        'minisnug': '1.1'
+      },
+      backgroundImage: {
+        'gradient-45': 'linear-gradient(45deg, var(--tw-gradient-stops))',
       }
     },
     fontFamily: {
