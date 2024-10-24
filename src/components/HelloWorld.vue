@@ -1,8 +1,6 @@
 <template>
-  <div :class="customContainerClass" class="relative w-full min-h-screen bg-gradient-to-r from-gradient1 to-gradient2 overflow-hidden lg:flex lg:items-center">
-    <div class="absolute top-0 left-0 w-80 h-full">
-      <Pattern />
-    </div>
+  <div :class="customContainerClass" class="relative w-full min-h-screen bg-gradient-to-r from-gradient1 to-gradient2 overflow-hidden lg:flex lg:items-center lg:min-h-0 lg:h-screen lg:max-h-limit">
+    <Pattern class="absolute top-0 left-0 w-80 h-full" />
 
     <div class="py-8 flex flex-col w-full min-h-screen lg:flex-row lg:min-h-0" :style="{}">
       <div class="flex flex-col lg:mr-1/10">
@@ -20,7 +18,7 @@
         </button>
       </div>
       
-      <div class="relative mt-12 min-h-60 lg:mt-0" :style="{flexGrow: 1, height: '100%' }">
+      <div class="relative mt-12 min-h-img lg:mt-0 lg:min-h-0" :style="{flexGrow: 1, height: '100%' }">
         <img class="absolute top-0 left-0 h-auto max-w-none" :style="{ width: '180%' }" src="./../../public/img.png" alt="">
       </div>
     </div>

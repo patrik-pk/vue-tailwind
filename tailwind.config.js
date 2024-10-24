@@ -16,6 +16,12 @@ export default {
       margin: {
         '1/10': '10%',
       },
+      maxHeight: {
+        'limit': '50vw'
+      },
+      minHeight: {
+        'img': '50vw'
+      }
     },
     fontFamily: {
       'inter': ["Inter", "sans-serif"],
